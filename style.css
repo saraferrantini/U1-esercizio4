@@ -18,6 +18,14 @@ body {
   box-shadow: 0 6px 12px rgb(0 0 0/30%);
   margin-inline: auto;
   margin-top: 20%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(22, 149, 173, 1) 44%,
+    rgba(19, 159, 186, 1) 82%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 .box2 {
@@ -167,6 +175,8 @@ body {
 
 .data1 {
   text-align: right;
+  padding-top: 112px;
+  padding-left: 112px;
 }
 
 .box3 {
@@ -182,7 +192,34 @@ body {
 
 .boxfooter {
   background-color: aqua;
-  height: 200px;
-  width: 400px;
   margin-inline: auto;
+  padding-top: 20px;
+  box-shadow: 0 6px 12px rgb(0 0 0/30%);
+  height: 200px;
+  width: 500px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(22, 149, 173, 1) 44%,
+    rgba(19, 159, 186, 1) 82%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.blogepicode {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.testata {
+  color: white;
+  text-align: center;
+}
+
+.info {
+  color: rgb(255, 0, 254);
+  font-weight: bold;
 }
