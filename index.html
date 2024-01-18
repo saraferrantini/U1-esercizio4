@@ -9,72 +9,60 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
 
-  <body class="font" class="body">
-    <img src="./sfondo.png" alt="sfondo" class="sfondo" />
-
+  <body>
     <header>
       <div class="box1">
-        <br />
-        <div><img src="./logo.svg" alt="logo del blog" width="250" height="60" /></div>
-        <br />
-        <br />
-        <br />
-        <div>EPICODE-IL BLOG DEI DEVELOPERS,</div>
-        <br /><br />
-        <div>HOME</div>
-        <br />
-        <div>ARTICOLI</div>
-        <br />
-        <div>LAVORA CON NOI</div>
+        <div class="logo"><img src="./logo.svg" alt="logo del blog" width="250" height="60" /></div>
+
+        <div class="margine">EPICODE-IL BLOG DEI DEVELOPERS,</div>
+
+        <div class="margine">HOME</div>
+
+        <div class="margine">ARTICOLI</div>
+
+        <div class="margine">LAVORA CON NOI</div>
       </div>
     </header>
 
     <main>
       <article>
         <div class="box2">
-          <br />
-          <br />
+          <div class="spazio">Come creare un template per i post</div>
 
-          <div>
-            <h1>
-              <b
-                >Come creare un template <br />
-                per i post</b
-              >
-            </h1>
+          <div class="marioRossi">
+            <span class="marioRossi">Di Mario Rossi - pubblicato il 25-10-2020</span>
           </div>
 
-          <span class="marioRossi">Di Mario Rossi - pubblicato il 25-10-2020</span>
-          <br />
-          <p>
-            La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le
-            <strong>parti comuni</strong> da applicare a tutte le pagine
-          </p>
-          <br />
+          <div class="primoblocchetto">
+            <p>
+              La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da
+              applicare a tutte le pagine
+            </p>
+          </div>
 
-          <p>Le varie aree saranno quindi suddivise in:</p>
-          <ul>
-            <li>Contenuti di intestazione del tag</li>
-            <li>Contenuti centrali variabili del tag</li>
-            <li>Contenuti di fine pagina comuni, da inserire nel tag</li>
+          <div class="primoblocchetto"><p>Le varie aree saranno quindi suddivise in:</p></div>
+          <ul class="puntini">
+            <li>Contenuti di intestazione del tag header</li>
+            <li>Contenuti centrali variabili del tag main</li>
+            <li>Contenuti di fine pagina comuni, da inserire nel tag footer</li>
           </ul>
-          <p>Formattazione del codice</p>
+          <p class="spaziotagfooter">Formattazione del codice</p>
           <p>
             Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da
-            <strong>selezionare con i CSS</strong>. Perciò i passi saranno:
+            <span class="bold">selezionare con i CSS</span>. Perciò i passi saranno:
           </p>
-          <br />
-          <ol>
+
+          <ol class="numeri">
             <li>Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato</li>
             <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
             <li>Applicare gli stili CSS</li>
           </ol>
-          <br />
+
           <p>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressoché totale.</p>
 
           <table class="bordo">
             <caption>
-              <i><b>Diffusione dei CSS</b></i>
+              <p class="corsivo">Diffusione dei CSS</p>
             </caption>
             <thead>
               <tr>
@@ -85,9 +73,9 @@
             </thead>
             <tbody>
               <tr>
-                <td>2000</td>
-                <td>20&percnt;</td>
-                <td>17&percnt;</td>
+                <td class="spazio2">2000</td>
+                <td lass="spazio2">20&percnt;</td>
+                <td lass="spazio2">17&percnt;</td>
               </tr>
               <tr>
                 <td>2002</td>
@@ -111,14 +99,16 @@
               </tr>
             </tbody>
           </table>
-          <p>
+
+          <p class="spazio3">
             Un test di validazione potrà essere fatto tramite il
-            <a href="https://tool-online.com/" target="blank" title="link">tool online</a>
+            <a href="https://tool-online.com/" target="blank" title="link" class="tool">tool online</a>
             dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati
             dei veri developers come loro:
           </p>
 
           <iframe
+            class="spaziovideo"
             width="300"
             height="300"
             src="https://www.youtube.com/embed/dvOvHXruEDM"
@@ -130,8 +120,10 @@
 
           <div class="grigio">
             <section>
-              <h2>NOVITA'</h2>
-              <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
+              <div class="novita">NOVITA'</div>
+              <div class="spazio4">
+                Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:
+              </div>
 
               <form method="POST" action="elabora_form.php">
                 <fieldset>
@@ -141,10 +133,37 @@
               </form>
             </section>
           </div>
-          <h1>ARTICOLI CORRELATI</h1>
-          <h2>ciao</h2>
+
+          <div class="spaziobox">ARTICOLI CORRELATI</div>
+
+          <div class="box3">
+            <div class="articolicorrelati"></div>
+            <p class="validare">Validare il codice HTML</p>
+            <p class="develop">Categoria: develop</p>
+            <p class="data1">Data: 18-9-2020</p>
+          </div>
+
+          <div class="box3">
+            <div class="articolicorrelati"></div>
+            <p class="validare">Correggere la sintassi</p>
+            <p class="develop">Categoria: develop</p>
+            <p class="data1">Data: 18-9-2020</p>
+          </div>
+
+          <div class="box3">
+            <div class="articolicorrelati"></div>
+            <p class="validare">Meno kb nella pagina</p>
+            <p class="develop">Categoria: develop</p>
+            <p class="data1">Data: 18-9-2020</p>
+          </div>
         </div>
       </article>
     </main>
+
+    <div class="boxfooter">
+      <footer>
+        <p>ciao</p>
+      </footer>
+    </div>
   </body>
 </html>
